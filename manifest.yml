@@ -1,0 +1,15 @@
+modules:
+  jira:issuePanel:
+    - key: engagement-panel
+      function: panel
+      title: Issue Engagement
+      icon: https://cdn.jim-nielsen.com/ios/512/wander-beautiful-world-time-2018-11-02.png
+  function:
+    - key: panel
+      handler: index.panel
+permissions: 
+  scopes: 
+    - 'read:jira-work'
+    - 'write:jira-work'
+app:
+  id: ari:cloud:ecosystem::app/dcc791bc-e6f9-4c76-ae4c-085f7ff281fb
