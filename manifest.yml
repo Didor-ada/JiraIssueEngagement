@@ -8,11 +8,22 @@ modules:
     - key: engagement-project-page
       title: Engagement Score Overview
       function: engagement-overview 
+  jira:customField:
+    - key: engagement-score-field
+      type: number
+      name: Engagement score
+      description: Score d'engagement pour un ticket
+  trigger:
+    - key: engagement-trigger
+      function: trigger
+      events: ['avi:jira:commented:issue']
   function:
     - key: panel
       handler: index.panel
     - key: engagement-overview
       handler: index.engagementOverview
+    - key: trigger
+      handler: index.trigger
 permissions: 
   scopes: 
     - 'read:jira-work'
