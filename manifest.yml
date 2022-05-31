@@ -4,9 +4,15 @@ modules:
       function: panel
       title: Issue Engagement
       icon: https://cdn.jim-nielsen.com/ios/512/wander-beautiful-world-time-2018-11-02.png
+  jira:projectPage:
+    - key: engagement-project-page
+      title: Engagement Score Overview
+      function: engagement-overview 
   function:
     - key: panel
       handler: index.panel
+    - key: engagement-overview
+      handler: index.engagementOverview
 permissions: 
   scopes: 
     - 'read:jira-work'
